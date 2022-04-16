@@ -1,0 +1,48 @@
+// colors
+$white: #ffffff;
+$black: #000000;
+$main_green: #007f3f;
+
+$light_gray: #b4b4b4;
+$dark_gray: #a7a7a7;
+$taupe: #5d5d67;
+
+// fonts
+$sizeOne: 44px;
+$sizeTwo: 38px;
+$sizeThree: 32px;
+$sizeFour: 26px;
+$sizeFive: 18px;
+$sizeSix: 14px;
+$sizeSeven: 16px;
+$sizeEight: 12px;
+
+$title: 32px;
+$subtitle: 18px;
+$paragraph: 14px;
+
+$font_family: "Fira Sans", sans-serif;
+$header_font: $font_family;
+$paragraph_font: $font_family;
+
+$bold: 700;
+$normal: 400;
+$thin: 300;
+$thick: 500;
+
+// breakpoints
+$xl_breakpoint: 1366px;
+$l_breakpoint: 1200px;
+$md_breakpoint: 768px;
+$sm_breakpoint: 500px;
+$xs_breakpoint: 400px;
+$xxs_breakpoint: 300px;
+
+// shadows
+$lightBoxShadow: #e9e9e9 0px 5px 10px 0px;
+$mediumBoxShadow: #c0c0c0 0px 5px 10px 0px;
+$btnBoxShadow: #a3a3a3 0px 3px 7px 2px;
+
+// sizes
+$menu_height: 60px;
+$text_spacing: 20px;

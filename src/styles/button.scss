@@ -1,0 +1,31 @@
+@import "./constants.scss";
+
+.button {
+    font-size: $sizeEight;
+    width: fit-content;
+    align-self: center;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    outline: none;
+    transition: transform 0.1s ease-in;
+
+    &:hover,
+    &:focus,
+    &:active {
+        transform: scale(0.8);
+    }
+
+    @media (min-width: $md_breakpoint) {
+        font-size: $sizeSix;
+    }
+
+    &__primary {
+        @extend .button;
+
+        text-transform: uppercase;
+        font-weight: $bold;
+        background-color: $white;
+        padding: 10px;
+    }
+}
