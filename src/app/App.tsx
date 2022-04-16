@@ -1,6 +1,7 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
-import { Layout, Navigation } from "../components/layout";
+import { Layout } from "../components/layout";
+import "../styles/button.css";
 
 interface AppProps {}
 
