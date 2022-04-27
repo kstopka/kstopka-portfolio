@@ -1,7 +1,75 @@
 @import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
 
 .nav {
-    position: fixed;
+    @include fixed;
+    @include flexBetween;
 
-    background-color: yellow;
+    height: $nav-height-mobile;
+    width: 100%;
+
+    border-bottom: $taupe solid 1px;
+    background-color: $light_gray;
+
+    &Logo {
+        // border-right: $taupe solid 1px;
+        // border-radius: 0 10px 10px 0;
+        font-size: 0;
+        line-height: 0;
+        a {
+            line-height: 0;
+            font-size: 0;
+            img {
+                height: $nav-height-mobile;
+                padding: 10px;
+            }
+        }
+    }
+
+    &Hamburger {
+        @include flexCenter;
+        height: $nav-height-mobile;
+        width: $nav-height-mobile;
+        cursor: pointer;
+        transition: $transition-default;
+        position: relative;
+
+        &Icon {
+            width: calc($nav-height-mobile * 0.6);
+            height: calc($nav-height-mobile * 0.1);
+            background-color: $main_green;
+            border-radius: 5px;
+            transition: $transition-default;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: calc($nav-height-mobile * 0.6);
+                height: calc($nav-height-mobile * 0.1);
+                background-color: $main_green;
+                border-radius: 5px;
+                transition: $transition-default;
+            }
+
+            &::before {
+                transform: translateY(calc($nav-height-mobile * 0.2));
+            }
+            &::after {
+                transform: translateY(calc($nav-height-mobile * -0.2));
+            }
+            &Open {
+                @extend .navHamburgerIcon;
+                transform: translateX(calc($nav-height-mobile * -0.6));
+                background-color: transparent;
+
+                &::before {
+                    transform: rotate(45deg) translate(44px, -44px);
+                }
+                &::after {
+                    transform: rotate(-45deg) translate(44px, 44px);
+                }
+            }
+        }
+    }
 }
