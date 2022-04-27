@@ -7,7 +7,6 @@ interface LayoutProps {}
 const Layout: FunctionComponent<LayoutProps> = () => {
     return (
         <div className="layout">
-            Layot
             <Navigation />
         </div>
     );
