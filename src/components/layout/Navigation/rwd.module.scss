@@ -1,47 +1,18 @@
-@use 'sass:map';
-@import '../../../styles/variables';
-@import './base.module.scss';
+@use "sass:map";
+@import "../../../styles/variables/variables.scss";
+@import "./base.module.scss";
 
-@media only screen and (max-width: map.get($breakpoints, 'smaller')) {
+@media only screen and (max-width: map.get($breakpoints, "smaller")) {
 }
 
-@media only screen and (min-width: map.get($breakpoints, 'smaller')) {
+@media only screen and (min-width: map.get($breakpoints, "smaller")) {
 }
 
-@media only screen and (min-width: map.get($breakpoints, 'small')) {
+@media only screen and (min-width: map.get($breakpoints, "small")) {
 }
 
-@media only screen and (min-width: map.get($breakpoints, 'large-min')) {
-  .button {
-    height: 45px;
-    border: 2px solid $grayscale-white;
-    font-size: 18px;
-    line-height: 30px;
-    border-radius: 6px;
-    margin: 0px 5px;
-    padding: 0 20px;
-
-    &Active {
-      height: 55px;
-      font-size: 18px;
-      line-height: 30px;
-      border-radius: 6px;
-      margin: 0px 5px;
-      padding: 0 30px;
-    }
-  }
+@media only screen and (min-width: map.get($breakpoints, "large-min")) {
 }
 
-@media only screen and (min-width: map.get($breakpoints, 'large')) {
-  .button {
-    font-size: 20px;
-    line-height: 33px;
-    height: 50px;
-
-    &Active {
-      font-size: 20px;
-      line-height: 33px;
-      height: 60px;
-    }
-  }
+@media only screen and (min-width: map.get($breakpoints, "large")) {
 }

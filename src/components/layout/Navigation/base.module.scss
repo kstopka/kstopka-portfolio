@@ -1,37 +1,5 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables/variables.scss";
 
-.button {
-  font-family: $primary-font;
-  text-align: center;
-  font-weight: 700;
-  color: $grayscale-white;
-  background: $primary-green;
-  height: 30px;
-
-  border: 1px solid $grayscale-white;
-  font-size: 12px;
-  line-height: 20px;
-  border-radius: 4px;
-  margin: 0px 4px;
-  padding: 0 10px;
-
-  &Active {
-    font-family: $primary-font;
-    text-align: center;
-    font-weight: 700;
-    color: $grayscale-black;
-    background-color: $grayscale-white;
-    height: 40px;
-
-    padding: 0 15px;
-    border: none;
-    font-size: 15px;
-    line-height: 25px;
-    border-radius: 4px;
-    margin: 0px 4px;
-  }
-
-  &:hover {
-    cursor: pointer;
-  }
+.wrapper {
+    color: red;
 }

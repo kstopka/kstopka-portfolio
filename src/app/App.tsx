@@ -2,7 +2,6 @@ import * as React from "react";
 import { FunctionComponent } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Layout } from "../components/layout";
-import "../styles/button.css";
 
 interface AppProps {}
 

@@ -2,9 +2,11 @@ import * as React from "react";
 import { FunctionComponent } from "react";
 import { Link } from "react-router-dom";
 import Footprint from "../../standard/Home/images/footprint-304372_640.svg";
-
-import "./navigation.css";
 import { INavItem } from "./types.d";
+
+import styles from "./rwd.module.scss";
+
+const { wrapper } = styles;
 
 const navLinks: Array<INavItem> = [
     {
@@ -22,7 +24,7 @@ interface NavigationProps {}
 const Navigation: FunctionComponent<NavigationProps> = () => {
     return (
         <div>
-            <div className="nav">
+            {/* <div className="nav">
                 <div className="nav__container">
                     <div className="nav__container__logo">
                         <Link to="/">
@@ -46,7 +48,8 @@ const Navigation: FunctionComponent<NavigationProps> = () => {
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> */}
+            <div className={wrapper}>Test</div>
         </div>
     );
 };
