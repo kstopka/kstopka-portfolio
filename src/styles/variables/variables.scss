@@ -1,0 +1,61 @@
+// This is an abstract SASS partial. It should *not* output any CSS rulesets.
+
+// Note: variables partial must be imported prior to importing mixins partial.
+
+$primary-purple: #373975;
+$primary-turquoise: #1e90bb;
+$primary-purple-tint: #f6f5fd;
+$primary-brown: #784631;
+$primary-green: #79af8d;
+$primary-yellow: #ffb601;
+$primary-red: #d2232a;
+
+$secondary-purple-1: #2c2c77;
+$secondary-purple-2: #7f7fd1;
+$secondary-purple-3: #8291ed;
+$secondary-purple-4: #e0e0ff;
+$secondary-purple-5: #222d65;
+
+$secondary-green-1: #55b732;
+
+$secondary-background: #f0ece3;
+
+$grayscale-black: #000000;
+$grayscale-dark-gray-secondary: #6a6a6a;
+$grayscale-dark-gray: #908e88;
+$grayscale-gray: #999999;
+$grayscale-secondary: #7d7d7d;
+$grayscale-secondary-pale: rgba(125, 125, 125, 0.2);
+$grayscale-light-gray: #dddddd;
+$grayscale-offwhite: #d7d7d7;
+$grayscale-white: #ffffff;
+
+$rating-star-color: #ffc51f;
+$alert-red: #dd0000;
+
+$primary-font: Century Gothic;
+$modern-bold: "ModernEra-Bold";
+$modern-regular: "ModernEra-Regular";
+$modern-medium: "ModernEra-Medium";
+
+$border-radius: 25px;
+$text-small: 12px;
+
+$breakpoints: (
+    "super-smaller": 450px,
+    "smaller": 672px,
+    "small": 1024px,
+    "large-min": 1148px,
+    "large": 1440px,
+    "large-max": 1920px,
+) !default;
+
+$transition-timing-function: ease;
+$curtain-transition-duration: 300ms;
+$modal-transition-duration: 300ms;
+$drawer-transition-duration: 600ms;
+$transition-default: $transition-timing-function $curtain-transition-duration;
+
+$button-height-large: 50px;
+$button-height-medium: 40px;
+$button-height-small: 24px;
