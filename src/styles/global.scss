@@ -1,4 +1,4 @@
-@import "./constants.scss";
+@import "./variables.scss";
 
 *,
 *::before,
@@ -13,33 +13,26 @@ html {
 }
 
 body {
-    background: #ffffff;
+    background: $white;
     font-family: $font_family;
 
     overflow: hidden;
     overflow-y: scroll;
 }
 
-// .loader {
-//     position: fixed;
-//     background: $white;
-//     color: $main_green;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 1000 * 1000;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
 a {
     cursor: pointer;
     text-decoration: none;
     background: transparent;
     display: inline-block;
+    text-transform: uppercase;
+
     font-family: $paragraph_font;
+    font-size: $sizeFour;
+    font-weight: $bold;
+    line-height: $siezeLineFour;
+    color: $main_green;
+    &:checked,
     &:hover,
     &:focus,
     &:active {
@@ -66,7 +59,6 @@ ul,
 ol {
     list-style: none;
     text-decoration: none;
-    margin: 0;
 }
 
 li {
@@ -77,57 +69,55 @@ li {
 h1 {
     font-family: $header_font;
     font-size: $sizeOne;
-    font-weight: 400;
-    line-height: 70px;
-
-    @media (max-width: $md_breakpoint) {
-        font-size: 22px;
-    }
+    font-weight: $bold;
+    line-height: $siezeLineOne;
+    color: $main_green;
 }
 h2 {
     font-family: $header_font;
     font-size: $sizeTwo;
-    font-weight: 400;
-    line-height: 55px;
+    font-weight: $bold;
+    line-height: $siezeLineTwo;
+    color: $main_green;
 }
 h3 {
     font-family: $header_font;
     font-size: $sizeThree;
-    font-weight: 400;
-    line-height: 43px;
+    font-weight: $bold;
+    line-height: $siezeLineThree;
+    color: $main_green;
 }
 h4 {
-    font-family: $header_font;
+    font-family: $paragraph_font;
     font-size: $sizeFour;
-    font-weight: 400;
-    line-height: 34px;
+    font-weight: $thick;
+    line-height: $siezeLineFour;
+    color: $main_green;
 }
 h5 {
     font-family: $paragraph_font;
-}
-h6,
-p {
-    font-family: $header_font;
     font-size: $sizeFive;
-    font-weight: 500;
-    color: $dark_gray;
+    font-weight: $thick;
+    line-height: $siezeLineFive;
+    color: $main_green;
+}
+h6 {
+    font-family: $paragraph_font;
+    font-size: $sizeSix;
+    font-weight: $thick;
+    line-height: $siezeLineSix;
+    color: $main_green;
+}
+
+p {
+    font-family: $paragraph_font;
+    font-size: $sizeFour;
+    font-weight: $thick;
+    line-height: $siezeLineFour;
+    color: $main_green;
 }
 
 img {
     max-width: 100%;
     width: auto;
-}
-
-// .body__large {
-//     max-width: 600px;
-//     font-family: $header_font;
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 16px;
-//     line-height: 160%;
-//     color: $taupe;
-// }
-
-label {
-    font-family: $paragraph_font;
 }

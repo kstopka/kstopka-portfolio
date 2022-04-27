@@ -3,4 +3,6 @@ interface INavItem {
     url: string;
 }
 
-export type { INavItem };
+interface NavigationProps {}
+
+export type { INavItem, NavigationProps };

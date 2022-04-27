@@ -2,45 +2,51 @@
 
 // Note: variables partial must be imported prior to importing mixins partial.
 
-$primary-purple: #373975;
-$primary-turquoise: #1e90bb;
-$primary-purple-tint: #f6f5fd;
-$primary-brown: #784631;
-$primary-green: #79af8d;
-$primary-yellow: #ffb601;
-$primary-red: #d2232a;
+// colors
+$white: #ffffff;
+$black: #000000;
+$main_green: #007f3f;
 
-$secondary-purple-1: #2c2c77;
-$secondary-purple-2: #7f7fd1;
-$secondary-purple-3: #8291ed;
-$secondary-purple-4: #e0e0ff;
-$secondary-purple-5: #222d65;
+$light_gray: #b4b4b4;
+$dark_gray: #a7a7a7;
+$taupe: #5d5d67;
 
-$secondary-green-1: #55b732;
+// fonts
+$sizeOne: 44px;
+$siezeLineOne: 70px;
 
-$secondary-background: #f0ece3;
+$sizeTwo: 38px;
+$siezeLineTwo: 55px;
 
-$grayscale-black: #000000;
-$grayscale-dark-gray-secondary: #6a6a6a;
-$grayscale-dark-gray: #908e88;
-$grayscale-gray: #999999;
-$grayscale-secondary: #7d7d7d;
-$grayscale-secondary-pale: rgba(125, 125, 125, 0.2);
-$grayscale-light-gray: #dddddd;
-$grayscale-offwhite: #d7d7d7;
-$grayscale-white: #ffffff;
+$sizeThree: 32px;
+$siezeLineThree: 43px;
 
-$rating-star-color: #ffc51f;
-$alert-red: #dd0000;
+$sizeFour: 26px;
+$siezeLineFour: 34px;
 
-$primary-font: Century Gothic;
-$modern-bold: "ModernEra-Bold";
-$modern-regular: "ModernEra-Regular";
-$modern-medium: "ModernEra-Medium";
+$sizeFive: 18px;
+$siezeLineFive: 26px;
 
-$border-radius: 25px;
-$text-small: 12px;
+$sizeSix: 14px;
+$siezeLineSix: 20px;
 
+$sizeSeven: 12px;
+$siezeLineSeven: 18px;
+
+$title: 32px;
+$subtitle: 18px;
+$paragraph: 14px;
+
+$font_family: "Fira Sans", sans-serif;
+$header_font: $font_family;
+$paragraph_font: $font_family;
+
+$bold: 700;
+$normal: 400;
+$thin: 300;
+$thick: 500;
+
+// breakpoints
 $breakpoints: (
     "super-smaller": 450px,
     "smaller": 672px,
@@ -50,12 +56,23 @@ $breakpoints: (
     "large-max": 1920px,
 ) !default;
 
+// shadows
+$lightBoxShadow: #e9e9e9 0px 5px 10px 0px;
+$mediumBoxShadow: #c0c0c0 0px 5px 10px 0px;
+$btnBoxShadow: #a3a3a3 0px 3px 7px 2px;
+
+// sizes
+$menu_height: 60px;
+$text_spacing: 20px;
+
+// button height
+$button-height-large: 50px;
+$button-height-medium: 40px;
+$button-height-small: 24px;
+
+// transition
 $transition-timing-function: ease;
 $curtain-transition-duration: 300ms;
 $modal-transition-duration: 300ms;
 $drawer-transition-duration: 600ms;
 $transition-default: $transition-timing-function $curtain-transition-duration;
-
-$button-height-large: 50px;
-$button-height-medium: 40px;
-$button-height-small: 24px;
