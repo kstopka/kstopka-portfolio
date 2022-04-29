@@ -1,15 +1,16 @@
 import * as React from "react";
 import { FunctionComponent, useState } from "react";
 import { Link } from "react-router-dom";
-import Footprint from "../../standard/Home/images/footprint-304372_640.svg";
+import Footprint from "../../images/footprint-304372_640.svg";
 import { NavigationProps } from "./types.d";
 
 import styles from "./rwd.module.scss";
+import { useHamburger } from "./hoooks";
 
 const { nav, navLogo, navHamburger, navHamburgerIcon, navHamburgerIconOpen } = styles;
 
 const Navigation: FunctionComponent<NavigationProps> = () => {
-    const [opened, setOpened] = useState(false);
+    const { handleHamburger, activeClass } = useHamburger(navHamburgerIcon, navHamburgerIconOpen);
     return (
         <div>
             {/* <div className="nav">
@@ -38,8 +39,8 @@ const Navigation: FunctionComponent<NavigationProps> = () => {
                         <img src={Footprint} alt="Footprint" />
                     </Link>
                 </div>
-                <div className={navHamburger} onClick={() => setOpened((prevState) => !prevState)}>
-                    <div className={opened ? navHamburgerIconOpen : navHamburgerIcon}></div>
+                <div className={navHamburger} onClick={handleHamburger}>
+                    <div className={activeClass}></div>
                 </div>
             </div>
         </div>

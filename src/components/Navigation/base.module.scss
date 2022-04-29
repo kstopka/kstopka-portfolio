@@ -1,5 +1,5 @@
-@import "../../../styles/variables.scss";
-@import "../../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 
 .nav {
     @include fixed;
@@ -12,8 +12,6 @@
     background-color: $light_gray;
 
     &Logo {
-        // border-right: $taupe solid 1px;
-        // border-radius: 0 10px 10px 0;
         font-size: 0;
         line-height: 0;
         a {
@@ -64,10 +62,10 @@
                 background-color: transparent;
 
                 &::before {
-                    transform: rotate(45deg) translate(44px, -44px);
+                    transform: rotate(45deg) translate(calc($nav-height-mobile * 0.5), calc($nav-height-mobile * -0.5));
                 }
                 &::after {
-                    transform: rotate(-45deg) translate(44px, 44px);
+                    transform: rotate(-45deg) translate(calc($nav-height-mobile * 0.5), calc($nav-height-mobile * 0.5));
                 }
             }
         }
