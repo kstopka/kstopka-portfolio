@@ -10,7 +10,7 @@ import { useHamburger } from "./hoooks";
 const { nav, navLogo, navHamburger, navHamburgerIcon, navHamburgerIconOpen } = styles;
 
 const Navigation: FunctionComponent<NavigationProps> = () => {
-    const { handleHamburger, activeClass } = useHamburger(navHamburgerIcon, navHamburgerIconOpen);
+    const { handleHamburger, hamburgerClass } = useHamburger(navHamburgerIcon, navHamburgerIconOpen);
     return (
         <div>
             {/* <div className="nav">
@@ -40,7 +40,7 @@ const Navigation: FunctionComponent<NavigationProps> = () => {
                     </Link>
                 </div>
                 <div className={navHamburger} onClick={handleHamburger}>
-                    <div className={activeClass}></div>
+                    <div className={hamburgerClass}></div>
                 </div>
             </div>
         </div>
