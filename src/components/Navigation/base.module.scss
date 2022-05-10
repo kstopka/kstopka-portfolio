@@ -1,9 +1,11 @@
 @import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
 
 .nav {
-    @include fixed;
-    @include flexBetween;
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
 
     height: $nav-height-mobile;
     width: 100%;

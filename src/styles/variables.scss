@@ -12,6 +12,8 @@ $dark_gray: #a7a7a7;
 $taupe: #5d5d67;
 
 // fonts
+$fontSizeResponsive: calc(2vw + 10px);
+
 $sizeOne: 44px;
 $siezeLineOne: 70px;
 
@@ -64,6 +66,7 @@ $btnBoxShadow: #a3a3a3 0px 3px 7px 2px;
 // sizes
 $menu_height: 60px;
 $text_spacing: 20px;
+$nav-height-mobile: 80px;
 
 // button height
 $button-height-large: 50px;
@@ -76,6 +79,3 @@ $curtain-transition-duration: 300ms;
 $modal-transition-duration: 300ms;
 $drawer-transition-duration: 600ms;
 $transition-default: $transition-timing-function $curtain-transition-duration;
-
-// navigation
-$nav-height-mobile: 80px;

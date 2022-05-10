@@ -1,8 +1,9 @@
 @import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
 
 .hamburger {
-    @include flexCenter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: $nav-height-mobile;
     width: $nav-height-mobile;
     cursor: pointer;

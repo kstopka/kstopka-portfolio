@@ -1,17 +1,26 @@
 @import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
 
 .menu {
-    background-color: yellowgreen;
+    position: fixed;
+    top: $nav-height-mobile;
+
+    width: 100vw;
+    height: calc(100vh - $nav-height-mobile);
+
+    transition: $transition-default;
+    transform: translateX(100%);
 
     &List {
-        color: red;
-        &Active {
-            color: White;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        background-color: rgba($color: $light_gray, $alpha: 0.5);
     }
 
     &Active {
-        background-color: green;
+        transform: translateX(0);
     }
 }

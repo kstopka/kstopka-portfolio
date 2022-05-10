@@ -5,15 +5,14 @@ import { MenuProps } from "./types.d";
 import styles from "./rwd.module.scss";
 import { useActiveClass } from "../hooks";
 
-const { menu, menuActive, menuList, menuListActive, menuListItem } = styles;
+const { menu, menuActive, menuList, menuListItem } = styles;
 
 const Menu: FunctionComponent<MenuProps> = ({ isOpen }) => {
-    const { activeClass: menuActiveClass } = useActiveClass(isOpen, menuActive, menu);
-    const { activeClass: menuListActiveClass } = useActiveClass(isOpen, menuListActive, menuList);
+    const { activeClass } = useActiveClass(isOpen, menuActive, menu);
 
     return (
-        <div className={menuActiveClass}>
-            <ul className={menuListActiveClass}>
+        <div className={activeClass}>
+            <ul className={menuList}>
                 <li className={menuListItem}>Home</li>
                 <li className={menuListItem}>About</li>
             </ul>
