@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.logo {
+    font-size: 0;
+    line-height: 0;
+    a {
+        line-height: 0;
+        font-size: 0;
+        img {
+            height: $nav-height-mobile;
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.hamburger {
+    @include flexCenter;
+    height: $nav-height-mobile;
+    width: $nav-height-mobile;
+    cursor: pointer;
+    transition: $transition-default;
+    position: relative;
+
+    &Icon {
+        width: calc($nav-height-mobile * 0.6);
+        height: calc($nav-height-mobile * 0.1);
+        background-color: $main_green;
+        border-radius: 5px;
+        transition: $transition-default;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: calc($nav-height-mobile * 0.6);
+            height: calc($nav-height-mobile * 0.1);
+            background-color: $main_green;
+            border-radius: 5px;
+            transition: $transition-default;
+        }
+
+        &::before {
+            transform: translateY(calc($nav-height-mobile * 0.2));
+        }
+        &::after {
+            transform: translateY(calc($nav-height-mobile * -0.2));
+        }
+        &Open {
+            @extend .hamburgerIcon;
+            transform: translateX(calc($nav-height-mobile * -0.6));
+            background-color: transparent;
+
+            &::before {
+                transform: rotate(45deg) translate(calc($nav-height-mobile * 0.5), calc($nav-height-mobile * -0.5));
+            }
+            &::after {
+                transform: rotate(-45deg) translate(calc($nav-height-mobile * 0.5), calc($nav-height-mobile * 0.5));
+            }
+        }
+    }
+}

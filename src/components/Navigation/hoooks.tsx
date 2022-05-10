@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 
-export const useHamburger = (navHamburgerIconOpen: string, navHamburgerIcon: string) => {
+export const useHamburger = (open: string, close: string) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleHamburger = () => {
@@ -12,10 +12,10 @@ export const useHamburger = (navHamburgerIconOpen: string, navHamburgerIcon: str
         return false;
     }, [isOpen]);
 
-    const hamburgerClass = useMemo(() => {
-        if (activeClass) return navHamburgerIconOpen;
-        return navHamburgerIcon;
+    const addHamburgerClass = useMemo(() => {
+        if (activeClass) return open;
+        return close;
     }, [isOpen]);
 
-    return { handleHamburger, hamburgerClass };
+    return { handleHamburger, addHamburgerClass };
 };
