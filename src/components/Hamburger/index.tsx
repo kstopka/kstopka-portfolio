@@ -2,12 +2,12 @@ import * as React from "react";
 import { FunctionComponent } from "react";
 import { HamburgerProps } from "./types.d";
 import styles from "./rwd.module.scss";
-import { useActiveClassHamburger } from "./hooks";
+import { useActiveClass } from "../hooks";
 
-const { hamburger, hamburgerIcon, hamburgerIconOpen } = styles;
+const { hamburger, hamburgerIcon, hamburgerIconActive } = styles;
 
 const Hamburger: FunctionComponent<HamburgerProps> = ({ isOpen, handleHamburger }) => {
-    const { activeClass } = useActiveClassHamburger(isOpen, hamburgerIcon, hamburgerIconOpen);
+    const { activeClass } = useActiveClass(isOpen, hamburgerIconActive, hamburgerIcon);
 
     return (
         <div className={hamburger} onClick={handleHamburger}>

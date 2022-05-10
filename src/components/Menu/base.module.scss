@@ -2,4 +2,16 @@
 @import "../../styles/mixins.scss";
 
 .menu {
+    background-color: yellowgreen;
+
+    &List {
+        color: red;
+        &Active {
+            color: White;
+        }
+    }
+
+    &Active {
+        background-color: green;
+    }
 }

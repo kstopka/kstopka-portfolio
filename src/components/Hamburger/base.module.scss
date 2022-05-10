@@ -33,7 +33,7 @@
         &::after {
             transform: translateY(calc($nav-height-mobile * -0.2));
         }
-        &Open {
+        &Active {
             @extend .hamburgerIcon;
             transform: translateX(calc($nav-height-mobile * -0.6));
             background-color: transparent;
