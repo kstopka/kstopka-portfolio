@@ -3,7 +3,7 @@ import { FunctionComponent } from "react";
 import { NavigationProps } from "./types.d";
 
 import styles from "./rwd.module.scss";
-import { Logo, Hamburger, Menu } from "..";
+import { Logo, Hamburger, Menu } from "../..";
 import { useHamburger } from "./hooks";
 
 const { nav } = styles;

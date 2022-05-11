@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
-import Navigation from "../Navigation";
+import Navigation from "../sections/Navigation";
 
 interface LayoutProps {}
 
