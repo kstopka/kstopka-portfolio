@@ -1,0 +1,14 @@
+@import "../../../styles/variables.scss";
+
+.menuLiItem {
+    width: 90%;
+
+    margin: 0 auto 10px;
+    background-color: rgba($black, 0.3);
+    border-radius: 25px;
+    box-shadow: $mediumBoxShadow;
+
+    a {
+        padding: 20px 0;
+    }
+}

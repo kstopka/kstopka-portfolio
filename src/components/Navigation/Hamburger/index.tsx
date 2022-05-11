@@ -2,7 +2,7 @@ import * as React from "react";
 import { FunctionComponent } from "react";
 import { HamburgerProps } from "./types.d";
 import styles from "./rwd.module.scss";
-import { useActiveClass } from "../hooks";
+import { useActiveClass } from "../../hooks";
 
 const { hamburger, hamburgerIcon, hamburgerIconActive } = styles;
 

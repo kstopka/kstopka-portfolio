@@ -3,9 +3,10 @@ import { FunctionComponent } from "react";
 import { MenuProps } from "./types.d";
 
 import styles from "./rwd.module.scss";
-import { useActiveClass } from "../hooks";
+import { useActiveClass } from "../../hooks";
+import MenuLiItem from "../MenuItem";
 
-const { menu, menuActive, menuList, menuListItem } = styles;
+const { menu, menuActive, menuList } = styles;
 
 const Menu: FunctionComponent<MenuProps> = ({ isOpen }) => {
     const { activeClass } = useActiveClass(isOpen, menuActive, menu);
@@ -13,8 +14,9 @@ const Menu: FunctionComponent<MenuProps> = ({ isOpen }) => {
     return (
         <div className={activeClass}>
             <ul className={menuList}>
-                <li className={menuListItem}>Home</li>
-                <li className={menuListItem}>About</li>
+                <MenuLiItem to="/" name="Home" />
+                <MenuLiItem to="/" name="About" />
+                <MenuLiItem to="/" name="Contact" />
             </ul>
         </div>
     );

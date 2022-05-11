@@ -28,11 +28,13 @@ a {
     background: transparent;
     display: inline-block;
     text-transform: uppercase;
+    text-align: center;
+    width: 100%;
 
     font-family: $paragraph_font;
     font-size: $sizeFour;
-    font-weight: $bold;
     line-height: $siezeLineFour;
+    font-weight: $bold;
     color: $main_green;
     &:checked,
     &:hover,
