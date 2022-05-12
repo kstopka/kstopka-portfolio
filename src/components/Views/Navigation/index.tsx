@@ -11,7 +11,7 @@ const { nav } = styles;
 
 const links: ILink[] = [
     { to: "/#home", name: "Home", value: "Home" },
-    { to: "/about", name: "About", value: "About" },
+    { to: "/hobby", name: "Hobby", value: "Hobby" },
     { to: "/#contact", name: "Contact", value: "Contact" },
 ];
 
