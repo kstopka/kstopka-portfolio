@@ -10,20 +10,18 @@ import { ILink } from "../../Navigation/MenuItem/types.d";
 const { nav } = styles;
 
 const links: ILink[] = [
-    { to: "/", name: "Home", value: "Home" },
+    { to: "/#home", name: "Home", value: "Home" },
     { to: "/about", name: "About", value: "About" },
-    { to: "/", name: "Contact", value: "Contact" },
+    { to: "/#contact", name: "Contact", value: "Contact" },
 ];
 
 const Navigation: FunctionComponent<NavigationProps> = () => {
     const { isOpen, handleHamburger } = useHamburger();
     return (
-        <div>
-            <div className={nav}>
-                <Logo {...{ handleHamburger }} />
-                <Menu {...{ isOpen, links, handleHamburger }} />
-                <Hamburger {...{ isOpen, handleHamburger }} />
-            </div>
+        <div className={nav}>
+            <Logo {...{ handleHamburger }} />
+            <Menu {...{ isOpen, links, handleHamburger }} />
+            <Hamburger {...{ isOpen, handleHamburger }} />
         </div>
     );
 };

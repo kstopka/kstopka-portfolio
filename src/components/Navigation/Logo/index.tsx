@@ -1,6 +1,7 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Footprint from "../../../images/footprint-304372_640.svg";
 import { LogoProps } from "./types.d";
 
@@ -11,9 +12,9 @@ const { logo } = styles;
 const Logo: FunctionComponent<LogoProps> = ({ handleHamburger }) => {
     return (
         <div className={logo}>
-            <Link to="/" onClick={() => handleHamburger(false)}>
+            <HashLink to="/#home" onClick={() => handleHamburger(false)}>
                 <img src={Footprint} alt="Footprint" />
-            </Link>
+            </HashLink>
         </div>
     );
 };

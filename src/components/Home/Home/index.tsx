@@ -7,7 +7,11 @@ import styles from "./rwd.module.scss";
 const { home } = styles;
 
 const Home: FunctionComponent<HomeProps> = () => {
-    return <div className={home}>Home</div>;
+    return (
+        <div className={home} id="home">
+            Home
+        </div>
+    );
 };
 
 export default Home;
