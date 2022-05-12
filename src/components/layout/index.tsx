@@ -1,8 +1,7 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
 import { Routes, Route } from "react-router-dom";
-import { HomePage } from "../Pages";
-import Navigation from "../sections/Navigation";
+import { HomePage, Navigation } from "../Views";
 
 interface LayoutProps {}
 
