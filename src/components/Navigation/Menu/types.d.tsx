@@ -1,5 +1,12 @@
+import { ILink } from "../MenuItem/types.d";
+
 interface MenuProps {
     isOpen: boolean;
+    links: ILink[];
 }
 
-export type { MenuProps };
+interface MutableRef<T> {
+    current: T;
+}
+
+export type { MenuProps, MutableRef };

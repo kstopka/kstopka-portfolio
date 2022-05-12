@@ -1,22 +1,23 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
 import { MenuProps } from "./types.d";
-
 import styles from "./rwd.module.scss";
 import { useActiveClass } from "../../hooks";
+import { useMenuLiItem } from "./hooks";
 import MenuLiItem from "../MenuItem";
 
 const { menu, menuActive, menuList } = styles;
 
-const Menu: FunctionComponent<MenuProps> = ({ isOpen }) => {
+const Menu: FunctionComponent<MenuProps> = ({ isOpen, links }) => {
     const { activeClass } = useActiveClass(isOpen, menuActive, menu);
+    const { ref, onChangeHandler } = useMenuLiItem();
 
     return (
         <div className={activeClass}>
-            <ul className={menuList}>
-                <MenuLiItem to="/" name="Home" />
-                <MenuLiItem to="/" name="About" />
-                <MenuLiItem to="/" name="Contact" />
+            <ul ref={ref} className={menuList}>
+                {links.map((link) => {
+                    return <MenuLiItem onChangeHandler={onChangeHandler} link={link} key={link.name} />;
+                })}
             </ul>
         </div>
     );
