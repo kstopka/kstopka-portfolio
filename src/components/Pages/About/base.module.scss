@@ -1,0 +1,7 @@
+@import "../../../styles/variables.scss";
+
+.aboutPage {
+    background-color: green;
+    min-height: calc(100vh - $nav-height-mobile);
+    margin-top: $nav-height-mobile;
+}

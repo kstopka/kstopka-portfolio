@@ -8,9 +8,9 @@ import MenuLiItem from "../MenuItem";
 
 const { menu, menuActive, menuList } = styles;
 
-const Menu: FunctionComponent<MenuProps> = ({ isOpen, links }) => {
+const Menu: FunctionComponent<MenuProps> = ({ isOpen, links, handleHamburger }) => {
     const { activeClass } = useActiveClass(isOpen, menuActive, menu);
-    const { ref, onChangeHandler } = useMenuLiItem();
+    const { ref, onChangeHandler } = useMenuLiItem(handleHamburger);
 
     return (
         <div className={activeClass}>

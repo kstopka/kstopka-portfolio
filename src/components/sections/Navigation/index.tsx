@@ -11,7 +11,7 @@ const { nav } = styles;
 
 const links: ILink[] = [
     { to: "/", name: "Home", value: "Home" },
-    { to: "/", name: "About", value: "About" },
+    { to: "/about", name: "About", value: "About" },
     { to: "/", name: "Contact", value: "Contact" },
 ];
 
@@ -20,8 +20,8 @@ const Navigation: FunctionComponent<NavigationProps> = () => {
     return (
         <div>
             <div className={nav}>
-                <Logo />
-                <Menu {...{ isOpen, links }} />
+                <Logo {...{ handleHamburger }} />
+                <Menu {...{ isOpen, links, handleHamburger }} />
                 <Hamburger {...{ isOpen, handleHamburger }} />
             </div>
         </div>

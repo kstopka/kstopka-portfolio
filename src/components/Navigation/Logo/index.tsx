@@ -8,10 +8,10 @@ import styles from "./rwd.module.scss";
 
 const { logo } = styles;
 
-const Logo: FunctionComponent<LogoProps> = () => {
+const Logo: FunctionComponent<LogoProps> = ({ handleHamburger }) => {
     return (
         <div className={logo}>
-            <Link to="/">
+            <Link to="/" onClick={() => handleHamburger(false)}>
                 <img src={Footprint} alt="Footprint" />
             </Link>
         </div>
