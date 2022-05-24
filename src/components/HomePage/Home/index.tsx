@@ -5,18 +5,17 @@ import { HomeProps } from "./types.d";
 import styles from "./rwd.module.scss";
 
 import { ImageHome, TitlesContentHome } from "./components";
-import { ImageHomeMock } from "../../../mocks/HomePage/Home/ImageHome.mocks";
-import { TitlesHomeMock } from "../../../mocks/HomePage/Home/Titles.mocks";
+
 const { wrapperHome, wrapperHomeImage, wrapperHomeTitles } = styles;
 
-const Home: FunctionComponent<HomeProps> = () => {
+const Home: FunctionComponent<HomeProps> = ({ image, titlesContent }) => {
     return (
         <div className={wrapperHome} id="home">
             <div className={wrapperHomeImage}>
-                <ImageHome {...ImageHomeMock} />
+                <ImageHome {...image} />
             </div>
             <div className={wrapperHomeTitles}>
-                <TitlesContentHome {...TitlesHomeMock} />
+                <TitlesContentHome {...titlesContent} />
             </div>
         </div>
     );
