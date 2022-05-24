@@ -1,7 +1,10 @@
 @import "../../../styles/variables.scss";
 
-.home {
-    background-color: maroon;
+.wrapperHome {
+    background-color: white;
     min-height: 100vh;
-    padding-top: $nav-height-mobile;
+    margin-top: $nav-height-mobile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
