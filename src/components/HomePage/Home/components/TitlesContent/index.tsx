@@ -7,9 +7,7 @@ import { AuthorHome, TitleHome, DescriptionHome } from "..";
 
 const { wrapperTitles, wrapperTitlesTitle, wrapperTitlesAuthor, wrapperTitlesDescription } = styles;
 
-export const TitlesContentHome: FunctionComponent<TitlesContentHomeProps> = ({
-    titlesContent: { title, author, description },
-}) => {
+export const TitlesContentHome: FunctionComponent<TitlesContentHomeProps> = ({ title, author, description }) => {
     return (
         <div className={wrapperTitles}>
             <div className={wrapperTitlesTitle}>

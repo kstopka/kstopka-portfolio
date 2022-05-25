@@ -1,3 +1,5 @@
-interface HobbyProps {}
+import { TitlesContentHobbyProps } from "./components/TitlesContent/types.d";
 
-export type { HobbyProps };
+export interface HobbyProps {
+    titlesContent: TitlesContentHobbyProps;
+}
