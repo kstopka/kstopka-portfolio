@@ -1,10 +1,10 @@
-interface ILink {
+export interface ILink {
     to: string;
     name: string;
     value: string;
 }
 
-interface MenuLiItemProps {
+export interface MenuLiItemProps {
     link: ILink;
     onChangeHandler: (e: TargetedEvent<HTMLLIElement, Event>) => void;
 }
@@ -19,11 +19,9 @@ interface Event {}
 interface EventTarget {}
 type Omit<T, K extends keyof any> = Pick<T, Exclude<keyof T, K>>;
 
-type TargetedEvent<Target extends EventTarget = EventTarget, TypedEvent extends Event = Event> = Omit<
+export type TargetedEvent<Target extends EventTarget = EventTarget, TypedEvent extends Event = Event> = Omit<
     TypedEvent,
     "currentTarget"
 > & {
     readonly currentTarget: Target;
 };
-
-export type { MenuLiItemProps, ILink, TargetedEvent };

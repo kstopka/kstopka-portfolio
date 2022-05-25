@@ -1,6 +1,6 @@
 import { INavItem } from "./types.d";
 
-const navLinks: Array<INavItem> = [
+export const navLinks: Array<INavItem> = [
     {
         name: "Home",
         url: "/",
@@ -10,5 +10,3 @@ const navLinks: Array<INavItem> = [
         url: "/contact",
     },
 ];
-
-export { navLinks };

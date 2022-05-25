@@ -4,11 +4,11 @@ import { MenuProps } from "./types.d";
 import styles from "./rwd.module.scss";
 import { useActiveClass } from "../../hooks";
 import { useMenuLiItem } from "./hooks";
-import MenuLiItem from "../MenuItem";
+import { MenuLiItem } from "../MenuItem";
 
 const { menu, menuActive, menuList } = styles;
 
-const Menu: FunctionComponent<MenuProps> = ({ isOpen, links, handleHamburger }) => {
+export const Menu: FunctionComponent<MenuProps> = ({ isOpen, links, handleHamburger }) => {
     const { activeClass } = useActiveClass(isOpen, menuActive, menu);
     const { ref, onChangeHandler } = useMenuLiItem(handleHamburger);
 
@@ -22,5 +22,3 @@ const Menu: FunctionComponent<MenuProps> = ({ isOpen, links, handleHamburger }) 
         </div>
     );
 };
-
-export default Menu;

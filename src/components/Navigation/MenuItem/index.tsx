@@ -8,7 +8,7 @@ import "./base.scss";
 
 const { menuLiItem, menuLiItemActive } = styles;
 
-const MenuLiItem: FunctionComponent<MenuLiItemProps> = ({ link, onChangeHandler }) => {
+export const MenuLiItem: FunctionComponent<MenuLiItemProps> = ({ link, onChangeHandler }) => {
     const { to, name, value } = link;
     return (
         <li onClick={onChangeHandler} className={`${menuLiItem} ${addActiveClassOnLoad(value, "Home")}`}>
@@ -18,5 +18,3 @@ const MenuLiItem: FunctionComponent<MenuLiItemProps> = ({ link, onChangeHandler 
         </li>
     );
 };
-
-export default MenuLiItem;

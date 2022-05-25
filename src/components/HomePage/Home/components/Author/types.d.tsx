@@ -1,5 +1,3 @@
-interface AuthorHomeProps {
+export interface AuthorHomeProps {
     author: string;
 }
-
-export type { AuthorHomeProps };

@@ -15,7 +15,7 @@ const links: ILink[] = [
     { to: "/#contact", name: "Contact", value: "Contact" },
 ];
 
-const Navigation: FunctionComponent<NavigationProps> = () => {
+export const Navigation: FunctionComponent<NavigationProps> = () => {
     const { isOpen, handleHamburger } = useHamburger();
     return (
         <div className={nav}>
@@ -25,5 +25,3 @@ const Navigation: FunctionComponent<NavigationProps> = () => {
         </div>
     );
 };
-
-export default Navigation;

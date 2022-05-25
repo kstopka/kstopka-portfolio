@@ -1,6 +1,4 @@
-interface HamburgerProps {
+export interface HamburgerProps {
     isOpen: boolean;
     handleHamburger: () => void;
 }
-
-export type { HamburgerProps };

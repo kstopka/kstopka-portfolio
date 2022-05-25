@@ -7,7 +7,7 @@ import { TitlesContentHobby } from "./components";
 
 const { wrapperHobby, wrapperHobbyTitles } = styles;
 
-const Hobby: FunctionComponent<HobbyProps> = ({ titlesContent }) => {
+export const Hobby: FunctionComponent<HobbyProps> = ({ titlesContent }) => {
     return (
         <div className={wrapperHobby}>
             <div className={wrapperHobbyTitles}>
@@ -16,5 +16,3 @@ const Hobby: FunctionComponent<HobbyProps> = ({ titlesContent }) => {
         </div>
     );
 };
-
-export default Hobby;

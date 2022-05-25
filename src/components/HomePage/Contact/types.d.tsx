@@ -1,3 +1,1 @@
-interface ContactProps {}
-
-export type { ContactProps };
+export interface ContactProps {}

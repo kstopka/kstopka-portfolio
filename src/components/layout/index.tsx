@@ -5,7 +5,7 @@ import { HomePage, Navigation } from "../Views";
 
 interface LayoutProps {}
 
-const Layout: FunctionComponent<LayoutProps> = () => {
+export const Layout: FunctionComponent<LayoutProps> = () => {
     return (
         <div className="layout">
             <Navigation />
@@ -16,5 +16,3 @@ const Layout: FunctionComponent<LayoutProps> = () => {
         </div>
     );
 };
-
-export default Layout;

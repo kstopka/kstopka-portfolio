@@ -1,4 +1,4 @@
-import HomePage from "./HomePage";
-import Navigation from "./Navigation";
+import { HomePage } from "./HomePage";
+import { Navigation } from "./Navigation";
 
 export { HomePage, Navigation };

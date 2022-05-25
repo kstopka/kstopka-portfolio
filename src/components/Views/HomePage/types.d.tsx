@@ -1,3 +1,1 @@
-interface HomePageProps {}
-
-export type { HomePageProps };
+export interface HomePageProps {}

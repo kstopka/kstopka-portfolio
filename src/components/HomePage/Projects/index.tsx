@@ -6,8 +6,6 @@ import styles from "./rwd.module.scss";
 
 const { projects } = styles;
 
-const Projects: FunctionComponent<ProjectsProps> = () => {
+export const Projects: FunctionComponent<ProjectsProps> = () => {
     return <div className={projects}>Projects</div>;
 };
-
-export default Projects;

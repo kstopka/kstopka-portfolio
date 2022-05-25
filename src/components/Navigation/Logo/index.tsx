@@ -9,7 +9,7 @@ import styles from "./rwd.module.scss";
 
 const { logo } = styles;
 
-const Logo: FunctionComponent<LogoProps> = ({ handleHamburger }) => {
+export const Logo: FunctionComponent<LogoProps> = ({ handleHamburger }) => {
     return (
         <div className={logo}>
             <HashLink to="/#home" onClick={() => handleHamburger(false)}>
@@ -18,5 +18,3 @@ const Logo: FunctionComponent<LogoProps> = ({ handleHamburger }) => {
         </div>
     );
 };
-
-export default Logo;

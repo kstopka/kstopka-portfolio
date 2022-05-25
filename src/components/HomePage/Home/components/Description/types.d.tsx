@@ -1,5 +1,3 @@
-interface DescriptionHomeProps {
+export interface DescriptionHomeProps {
     description: string;
 }
-
-export type { DescriptionHomeProps };

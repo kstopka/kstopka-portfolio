@@ -1,5 +1,3 @@
-interface TitleHomeProps {
+export interface TitleHomeProps {
     title: string;
 }
-
-export type { TitleHomeProps };

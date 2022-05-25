@@ -1,8 +1,6 @@
-interface INavItem {
+export interface INavItem {
     name: string;
     url: string;
 }
 
-interface NavigationProps {}
-
-export type { INavItem, NavigationProps };
+export interface NavigationProps {}

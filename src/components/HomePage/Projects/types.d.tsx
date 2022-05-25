@@ -1,3 +1,1 @@
-interface ProjectsProps {}
-
-export type { ProjectsProps };
+export interface ProjectsProps {}

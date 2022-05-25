@@ -8,7 +8,7 @@ import { ImageHome, TitlesContentHome } from "./components";
 
 const { wrapperHome, wrapperHomeImage, wrapperHomeTitles } = styles;
 
-const Home: FunctionComponent<HomeProps> = ({ image, titlesContent }) => {
+export const Home: FunctionComponent<HomeProps> = ({ image, titlesContent }) => {
     return (
         <div className={wrapperHome} id="home">
             <div className={wrapperHomeImage}>
@@ -20,5 +20,3 @@ const Home: FunctionComponent<HomeProps> = ({ image, titlesContent }) => {
         </div>
     );
 };
-
-export default Home;

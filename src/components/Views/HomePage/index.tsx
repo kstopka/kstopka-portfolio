@@ -9,7 +9,7 @@ import { HomeMock } from "../../../mocks/HomePage/Home/Home.mocks";
 
 const { homePage } = styles;
 
-const HomePage: FunctionComponent<HomePageProps> = () => {
+export const HomePage: FunctionComponent<HomePageProps> = () => {
     return (
         <div className={homePage}>
             <Home {...HomeMock} />
@@ -20,5 +20,3 @@ const HomePage: FunctionComponent<HomePageProps> = () => {
         </div>
     );
 };
-
-export default HomePage;

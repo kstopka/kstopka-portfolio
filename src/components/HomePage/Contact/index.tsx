@@ -6,12 +6,10 @@ import styles from "./rwd.module.scss";
 
 const { contact } = styles;
 
-const Contact: FunctionComponent<ContactProps> = () => {
+export const Contact: FunctionComponent<ContactProps> = () => {
     return (
         <div className={contact} id="contact">
             Contact
         </div>
     );
 };
-
-export default Contact;

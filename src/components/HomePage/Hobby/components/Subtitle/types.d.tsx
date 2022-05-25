@@ -1,5 +1,3 @@
-interface SubtitleHobbyProps {
+export interface SubtitleHobbyProps {
     subtitle: string;
 }
-
-export type { SubtitleHobbyProps };

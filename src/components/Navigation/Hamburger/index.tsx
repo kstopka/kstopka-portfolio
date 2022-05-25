@@ -6,7 +6,7 @@ import { useActiveClass } from "../../hooks";
 
 const { hamburger, hamburgerIcon, hamburgerIconActive } = styles;
 
-const Hamburger: FunctionComponent<HamburgerProps> = ({ isOpen, handleHamburger }) => {
+export const Hamburger: FunctionComponent<HamburgerProps> = ({ isOpen, handleHamburger }) => {
     const { activeClass } = useActiveClass(isOpen, hamburgerIconActive, hamburgerIcon);
 
     return (
@@ -15,5 +15,3 @@ const Hamburger: FunctionComponent<HamburgerProps> = ({ isOpen, handleHamburger 
         </div>
     );
 };
-
-export default Hamburger;
