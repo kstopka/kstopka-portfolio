@@ -1,0 +1,33 @@
+@import "../../../../../styles/variables.scss";
+
+.wrapperCard {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+
+    height: 100%;
+    align-items: center;
+    max-width: 240px;
+    &Image {
+        width: 240px;
+        height: 240px;
+        min-height: 240px;
+        background-color: bisque;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &Title {
+        margin: 0 auto;
+        min-height: 80px;
+        height: 100%;
+        p {
+        }
+    }
+    &Footer {
+        // align-self: flex-end;
+        // justify-items: flex-end;
+        // justify-self: end;
+    }
+}

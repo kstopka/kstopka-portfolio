@@ -8,7 +8,7 @@ interface LayoutProps {}
 export const Layout: FunctionComponent<LayoutProps> = () => {
     return (
         <div className="layout">
-            <Navigation />
+            {/* <Navigation /> */}
 
             <Routes>
                 <Route path="/" element={<HomePage />} />

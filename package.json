@@ -13,6 +13,7 @@
     "@types/react-redux": "^7.1.23",
     "@types/react-router-dom": "^5.3.3",
     "@types/react-router-hash-link": "^2.4.5",
+    "keen-slider": "^6.6.14",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^7.2.8",

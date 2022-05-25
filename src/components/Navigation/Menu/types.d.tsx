@@ -6,6 +6,6 @@ export interface MenuProps {
     handleHamburger: () => void;
 }
 
-export interface MutableRef<T> {
-    current: T;
-}
+// export interface MutableRef<T> {
+//     current: T;
+// }

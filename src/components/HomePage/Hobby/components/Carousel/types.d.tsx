@@ -1,3 +1,3 @@
 export interface CarouselHobbyProps {
-    hobbies: any[];
+    cards: any[];
 }

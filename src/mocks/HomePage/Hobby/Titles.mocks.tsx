@@ -3,11 +3,11 @@ import { TitleHobbyProps } from "../../../components/HomePage/Hobby/components/T
 import { TitlesContentHobbyProps } from "../../../components/HomePage/Hobby/components/TitlesContent/types.d";
 
 const TitleHobbyMock: TitleHobbyProps = {
-    title: "Cześć",
+    title: "1",
 };
 
 const SubtitleHobbyMock: SubtitleHobbyProps = {
-    subtitle: "Jestem Krystian",
+    subtitle: "2",
 };
 
 export const TitlesHobbyMock: TitlesContentHobbyProps = {

@@ -3,15 +3,27 @@ import { FunctionComponent } from "react";
 import { HobbyProps } from "./types.d";
 
 import styles from "./rwd.module.scss";
-import { TitlesContentHobby } from "./components";
+import { CarouselHobby, TitlesContentHobby } from "./components";
 
-const { wrapperHobby, wrapperHobbyTitles } = styles;
+const { wrapperHobby, wrapperHobbyTitles, wrapperHobbyCarousel } = styles;
+const testArray = {
+    cards: [
+        {
+            title: "test 1 test 1 test 1 test 1 test 1 test 1 test 1 test 1 test 1 test 1 test 1 test 1 test 1 test 1 test 1 test 1 ",
+        },
+        { title: "test 2" },
+        { title: "test 3" },
+    ],
+};
 
 export const Hobby: FunctionComponent<HobbyProps> = ({ titlesContent }) => {
     return (
         <div className={wrapperHobby}>
             <div className={wrapperHobbyTitles}>
                 <TitlesContentHobby {...titlesContent} />
+            </div>
+            <div className={wrapperHobbyCarousel}>
+                <CarouselHobby {...testArray} />
             </div>
         </div>
     );

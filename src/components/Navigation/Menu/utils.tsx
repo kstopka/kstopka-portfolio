@@ -1,7 +1,8 @@
 import { TargetedEvent } from "../MenuItem/types.d";
-import { MutableRef } from "./types.d";
+// import { MutableRef } from "./types.d";
+import { MutableRefObject } from "react";
 
-export const removeEveryActiveClassFromChildren = (ref: MutableRef<HTMLUListElement | null>) => {
+export const removeEveryActiveClassFromChildren = (ref: MutableRefObject<HTMLUListElement | null>) => {
     if (ref.current) {
         const { children } = ref.current;
         const listOfChildren = Array.from(children);
