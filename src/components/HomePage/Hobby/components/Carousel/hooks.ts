@@ -28,7 +28,12 @@ const defaultMainCarouselOptions: KeenSliderOptions = {
         perView: 1,
     },
     breakpoints: {
-        "(min-width: 1148px)": {
+        "(min-width: 1024px)": {
+            slides: {
+                perView: 2,
+            },
+        },
+        "(min-width: 1440px)": {
             slides: {
                 perView: 3,
             },

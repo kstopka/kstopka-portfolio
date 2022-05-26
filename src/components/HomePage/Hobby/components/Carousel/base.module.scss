@@ -1,66 +1,58 @@
 @import "../../../../../styles/variables.scss";
 
 .wrapperCarousel {
-    background-color: salmon;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // z-index: 1;
-    // position: relative;
+    position: relative;
+    max-width: 90vw;
 
     [class^="number-slide"],
     [class*=" number-slide"] {
         display: flex;
-        // align-items: flex-end;
+        align-items: flex-end;
         justify-content: center;
     }
 
     &Slider {
         margin: 0 auto;
-        background-color: yellow;
     }
     &Arrows {
-        // background-color: aquamarine;
         position: absolute;
         display: flex;
         justify-content: space-between;
-        z-index: 10;
-
+        z-index: 2;
         width: 100%;
-        // top: 240px;
+
         button {
-            // display: block;
-            // position: absolute;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            // z-index: 1;
             width: 35px;
             height: 35px;
             border-radius: 50%;
             background-color: burlywood;
-            // background-position: center;
-            // background-repeat: no-repeat;
-            // top: 0;
-            // transform: translateY(-50%);
-            // opacity: 1;
-            // transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
-            // transform: scale3d(1, 1, 1) translateY(-50%);
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 0;
+            opacity: 1;
+            transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+            transform: scale3d(1, 1, 1);
 
-            // svg {
-            //     height: 19px;
-            // }
+            svg {
+                height: 19px;
+            }
 
-            // &:hover {
-            //     opacity: 0.7;
-            // }
+            &:hover {
+                opacity: 0.7;
+            }
 
-            // &:active {
-            //     opacity: 0.3;
-            //     transform: scale3d(0.98, 0.98, 0.98) translateY(-50%);
-            // }
+            &:active {
+                opacity: 0.3;
+                transform: scale3d(0.98, 0.98, 0.98);
+            }
         }
     }
 }

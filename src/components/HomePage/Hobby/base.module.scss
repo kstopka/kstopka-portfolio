@@ -2,14 +2,16 @@
 
 .wrapperHobby {
     // background-color: yellowgreen;
-    min-height: calc(100vh - $nav-height-mobile);
+    // min-height: calc(100vh - $nav-height-mobile);
     // margin-top: $nav-height-mobile;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &Titles {
         background-color: yellowgreen;
     }
 
     &Carousel {
-        background-color: royalblue;
+        // background-color: royalblue;
     }
 }

@@ -4,7 +4,13 @@ import { CardHobbyProps } from "./types.d";
 
 import styles from "./rwd.module.scss";
 
-const { wrapperCard, wrapperCardImage, wrapperCardTitle, wrapperCardFooter } = styles;
+const {
+    wrapperCard,
+    wrapperCardImage,
+    wrapperCardInformation,
+    wrapperCardInformationTitle,
+    wrapperCardInformationFooter,
+} = styles;
 
 export const CardHobby: FunctionComponent<CardHobbyProps> = ({ title }) => {
     return (
@@ -12,10 +18,12 @@ export const CardHobby: FunctionComponent<CardHobbyProps> = ({ title }) => {
             <div className={wrapperCardImage}>
                 <img src="" alt="" />
             </div>
-            <div className={wrapperCardTitle}>
-                <p>{title}</p>
+            <div className={wrapperCardInformation}>
+                <div className={wrapperCardInformationTitle}>
+                    <p>{title}</p>
+                </div>
+                <div className={wrapperCardInformationFooter}>Footer</div>
             </div>
-            <div className={wrapperCardFooter}>Footer</div>
         </div>
     );
 };

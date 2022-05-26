@@ -6,6 +6,24 @@
 }
 
 @media only screen and (min-width: map.get($breakpoints, "smaller")) {
+    .wrapperCard {
+        max-width: 538px;
+        &Image {
+            width: 538px;
+            height: 430px;
+            min-height: 430px;
+        }
+        &Information {
+            min-height: 340px;
+
+            &Title {
+                max-width: 437px;
+            }
+            &Footer {
+                max-width: 437px;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: map.get($breakpoints, "small")) {
