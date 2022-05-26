@@ -12,6 +12,7 @@
         height: 64vw;
         min-height: 64vw;
         border-radius: 20px 20px 0 0;
+        background-color: royalblue;
         img {
             width: 100%;
             height: 100%;
@@ -29,15 +30,11 @@
         height: 100%;
         margin-bottom: 30px;
         &Title {
-            margin: 20px auto 0;
+            margin: 20px 20px 0 20px;
             height: 100%;
-            max-width: 65vw;
-            background-color: red;
         }
         &Footer {
-            background-color: yellowgreen;
-            margin: 20px auto;
-            max-width: 65vw;
+            margin: 20px;
         }
     }
 }

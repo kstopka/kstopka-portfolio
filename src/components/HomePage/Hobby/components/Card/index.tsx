@@ -15,9 +15,7 @@ const {
 export const CardHobby: FunctionComponent<CardHobbyProps> = ({ title }) => {
     return (
         <div className={wrapperCard}>
-            <div className={wrapperCardImage}>
-                <img src="" alt="" />
-            </div>
+            <div className={wrapperCardImage}>{/* <img src="" alt="" /> */}</div>
             <div className={wrapperCardInformation}>
                 <div className={wrapperCardInformationTitle}>
                     <p>{title}</p>
