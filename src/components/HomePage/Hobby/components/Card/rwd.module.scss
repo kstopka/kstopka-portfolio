@@ -14,8 +14,6 @@
             min-height: 430px;
         }
         &Information {
-            min-height: 340px;
-
             &Title {
                 max-width: 437px;
             }
@@ -27,12 +25,44 @@
 }
 
 @media only screen and (min-width: map.get($breakpoints, "small")) {
+    .wrapperCard {
+        max-width: 39.1vw;
+        &Image {
+            max-width: 39.1vw;
+            height: 31.3vw;
+            min-height: 31.3vw;
+        }
+        &Information {
+            &Title {
+                max-width: 35vw;
+            }
+            &Footer {
+                max-width: 35vw;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: map.get($breakpoints, "large-min")) {
 }
 
 @media only screen and (min-width: map.get($breakpoints, "large")) {
+    .wrapperCard {
+        max-width: 37.5vw;
+        &Image {
+            max-width: 37.5vw;
+            height: 30vw;
+            min-height: 30vw;
+        }
+        &Information {
+            &Title {
+                max-width: 30vw;
+            }
+            &Footer {
+                max-width: 30vw;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: map.get($breakpoints, "large-max")) {

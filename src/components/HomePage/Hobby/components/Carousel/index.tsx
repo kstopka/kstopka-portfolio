@@ -31,10 +31,7 @@ export const CarouselHobby: FunctionComponent<CarouselHobbyProps> = ({ cards }) 
             <div ref={mainSliderRef} className={`keen-slider ${wrapperCarouselSlider}`}>
                 {[...cards, ...cards].map((card, index) => {
                     return (
-                        <div
-                            className={`keen-slider__slide number-slide${index + 1} homeReviewsCarouselSingleSlide`}
-                            key={card.title}
-                        >
+                        <div className={`keen-slider__slide number-slide${index + 1}`} key={card.title}>
                             <CardHobby {...card} />
                         </div>
                     );
