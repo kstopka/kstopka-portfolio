@@ -4,7 +4,7 @@ import { HomePageProps } from "./types.d";
 
 import styles from "./rwd.module.scss";
 import { About, Contact, Hobby, Home, Projects, Technologies } from "../../HomePage";
-import { HobbyMock, HomeMock } from "../../../mocks/HomePage";
+import { HobbyMock, HomeMock, TechnologiesMock } from "../../../mocks/HomePage";
 
 const { homePage } = styles;
 
@@ -15,7 +15,7 @@ export const HomePage: FunctionComponent<HomePageProps> = () => {
             {/* <About /> */}
             {/* <Hobby {...HobbyMock} /> */}
             {/* <Projects /> */}
-            <Technologies />
+            <Technologies {...TechnologiesMock} />
             {/* <Contact /> */}
         </div>
     );
