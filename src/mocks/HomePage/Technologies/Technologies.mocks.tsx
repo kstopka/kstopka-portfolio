@@ -1,8 +1,8 @@
 import { TechnologiesProps } from "../../../components/HomePage/Technologies/types.d";
 import { LogosTechnologiesMock } from "./Logos.mocks";
-import { TitlesTechnologiesMock } from "./Titles.mocks";
+import { TitleTechnologiesMock } from "./Titles.mocks";
 
 export const TechnologiesMock: TechnologiesProps = {
-    titlesContent: TitlesTechnologiesMock,
+    title: TitleTechnologiesMock,
     logos: LogosTechnologiesMock,
 };

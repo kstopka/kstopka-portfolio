@@ -1,4 +1,17 @@
 @import "../../../styles/variables.scss";
 
 .wrapperTechnologies {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &Titles {
+        position: absolute;
+        margin: 20px auto;
+    }
+
+    &Carousel {
+        margin: 20px auto;
+        position: absolute;
+    }
 }

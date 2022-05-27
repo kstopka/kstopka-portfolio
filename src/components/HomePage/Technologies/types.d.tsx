@@ -1,7 +1,7 @@
 import { CarouselTechnologiesProps } from "./components/Carousel/types";
-import { TitlesContentTechnologiesProps } from "./components/TitlesContent/types.d";
+import { TitleTechnologiesProps } from "./components/Title/types.d";
 
 export interface TechnologiesProps {
-    titlesContent: TitlesContentTechnologiesProps;
+    title: TitleTechnologiesProps;
     logos: CarouselTechnologiesProps;
 }
