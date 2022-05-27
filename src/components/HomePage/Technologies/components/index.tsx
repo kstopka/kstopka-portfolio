@@ -1,5 +1,6 @@
+import { CarouselTechnologies } from "./Carousel";
 import { SubtitleTechnologies } from "./Subtitle";
 import { TitleTechnologies } from "./Title";
 import { TitlesContentTechnologies } from "./TitlesContent";
 
-export { SubtitleTechnologies, TitleTechnologies, TitlesContentTechnologies };
+export { CarouselTechnologies, SubtitleTechnologies, TitleTechnologies, TitlesContentTechnologies };
