@@ -1,6 +1,6 @@
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { initialAnimationOptions, ResizePlugin, sliderBreakpoints } from "./utils";
+import { initialAnimationOptions, ResizePlugin } from "./utils";
 
 export const useCarousel = () => {
     const [sliderRef] = useKeenSlider<HTMLDivElement>(
@@ -23,7 +23,14 @@ export const useCarousel = () => {
                 perView: "auto",
                 spacing: 15,
             },
-            breakpoints: sliderBreakpoints,
+            breakpoints: {
+                "(min-width: 672px)": {
+                    slides: {
+                        perView: "auto",
+                        spacing: 30,
+                    },
+                },
+            },
         },
         [ResizePlugin]
     );
