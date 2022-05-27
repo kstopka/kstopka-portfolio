@@ -16,14 +16,14 @@ const testArray = {
     ],
 };
 
-export const Hobby: FunctionComponent<HobbyProps> = ({ titlesContent }) => {
+export const Hobby: FunctionComponent<HobbyProps> = ({ titlesContent, cards }) => {
     return (
         <div className={wrapperHobby} id="hobby">
             <div className={wrapperHobbyTitles}>
                 <TitlesContentHobby {...titlesContent} />
             </div>
             <div className={wrapperHobbyCarousel}>
-                <CarouselHobby {...testArray} />
+                <CarouselHobby {...cards} />
             </div>
         </div>
     );
