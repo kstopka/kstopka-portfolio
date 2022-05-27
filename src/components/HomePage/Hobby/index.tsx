@@ -18,7 +18,7 @@ const testArray = {
 
 export const Hobby: FunctionComponent<HobbyProps> = ({ titlesContent }) => {
     return (
-        <div className={wrapperHobby}>
+        <div className={wrapperHobby} id="hobby">
             <div className={wrapperHobbyTitles}>
                 <TitlesContentHobby {...titlesContent} />
             </div>
