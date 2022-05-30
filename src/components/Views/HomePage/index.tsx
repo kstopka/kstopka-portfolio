@@ -13,9 +13,9 @@ export const HomePage: FunctionComponent<HomePageProps> = () => {
         <div className={homePage}>
             {/* <Home {...HomeMock} /> */}
             {/* <About /> */}
-            {/* <Hobby {...HobbyMock} /> */}
+            <Hobby {...HobbyMock} />
             {/* <Projects /> */}
-            <Technologies {...TechnologiesMock} />
+            {/* <Technologies {...TechnologiesMock} /> */}
             {/* <Contact /> */}
         </div>
     );
