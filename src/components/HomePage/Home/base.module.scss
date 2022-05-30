@@ -7,4 +7,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &Image {
+        background-color: #eee;
+    }
+    &Titles {
+        background-color: #eee;
+        margin: 10px auto;
+    }
 }

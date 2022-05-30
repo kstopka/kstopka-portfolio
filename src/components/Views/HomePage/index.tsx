@@ -12,10 +12,10 @@ export const HomePage: FunctionComponent<HomePageProps> = () => {
     return (
         <div className={homePage}>
             {/* <Home {...HomeMock} /> */}
-            {/* <About /> */}
-            <Hobby {...HobbyMock} />
+            <About />
+            {/* <Hobby {...HobbyMock} /> */}
             {/* <Projects /> */}
-            {/* <Technologies {...TechnologiesMock} /> */}
+            <Technologies {...TechnologiesMock} />
             {/* <Contact /> */}
         </div>
     );

@@ -1,4 +1,21 @@
 @import "../../../../../styles/variables.scss";
 
 .wrapperTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd;
+
+    &Title {
+        margin: 10px auto;
+        background-color: #ccc;
+    }
+    &Author {
+        margin: 10px auto;
+        background-color: #ccc;
+    }
+    &Description {
+        margin: 10px auto;
+        background-color: #ccc;
+    }
 }

@@ -4,7 +4,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    // background-color: red;
     &Titles {
+        margin-bottom: 20px;
+    }
+
+    &Carousel {
         margin-bottom: 20px;
     }
 }
