@@ -5,13 +5,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 300px;
     &Titles {
         position: absolute;
         margin: 20px auto;
     }
 
     &Carousel {
-        margin: 20px auto;
         position: absolute;
+        margin: 20px auto;
     }
 }
