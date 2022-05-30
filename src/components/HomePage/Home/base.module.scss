@@ -1,18 +1,15 @@
 @import "../../../styles/variables.scss";
 
 .wrapperHome {
-    background-color: white;
-    min-height: 100vh;
-    margin-top: $nav-height-mobile;
+    padding-top: $nav-height-mobile;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &Image {
-        background-color: #eee;
+        margin: 20px auto;
     }
     &Titles {
-        background-color: #eee;
-        margin: 10px auto;
+        margin: 20px auto;
     }
 }

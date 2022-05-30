@@ -1,10 +1,10 @@
 @import "../../../styles/variables.scss";
 
 .wrapperHobby {
+    padding-top: $nav-height-mobile;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background-color: red;
     &Titles {
         margin-bottom: 20px;
     }
