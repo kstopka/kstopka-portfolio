@@ -11,12 +11,12 @@ const { homePage } = styles;
 export const HomePage: FunctionComponent<HomePageProps> = () => {
     return (
         <div className={homePage}>
-            {/* <Home {...HomeMock} /> */}
+            <Home {...HomeMock} />
             <About />
-            {/* <Hobby {...HobbyMock} /> */}
-            {/* <Projects /> */}
+            <Hobby {...HobbyMock} />
+            <Projects />
             <Technologies {...TechnologiesMock} />
-            {/* <Contact /> */}
+            <Contact />
         </div>
     );
 };

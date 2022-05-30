@@ -6,6 +6,9 @@
 }
 
 @media only screen and (min-width: map.get($breakpoints, "smaller")) {
+    .wrapperTechnologies {
+        height: 400px;
+    }
 }
 
 @media only screen and (min-width: map.get($breakpoints, "small")) {
@@ -18,4 +21,7 @@
 }
 
 @media only screen and (min-width: map.get($breakpoints, "large-max")) {
+    .wrapperTechnologies {
+        height: 480px;
+    }
 }

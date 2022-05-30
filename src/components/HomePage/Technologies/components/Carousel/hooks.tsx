@@ -30,6 +30,12 @@ export const useCarousel = () => {
                         spacing: 30,
                     },
                 },
+                "(min-width: 1920px)": {
+                    slides: {
+                        perView: "auto",
+                        spacing: 50,
+                    },
+                },
             },
         },
         [ResizePlugin]

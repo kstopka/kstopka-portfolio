@@ -15,7 +15,7 @@ export const ResizePlugin: KeenSliderPlugin = (slider) => {
 };
 
 export const initialAnimationOptions = {
-    duration: 10000,
+    duration: 25000,
     easing: (time: number) => time,
 };
 
