@@ -7,11 +7,11 @@ import Footprint from "../../../images/footprint-304372_640.svg";
 import { LogoProps } from "./types.d";
 import styles from "./rwd.module.scss";
 
-const { logo } = styles;
+const { wrapperLogo } = styles;
 
 export const Logo: FunctionComponent<LogoProps> = ({ handleHamburger }) => {
     return (
-        <div className={logo}>
+        <div className={wrapperLogo}>
             <HashLink to="/#home" onClick={() => handleHamburger(false)}>
                 <img src={Footprint} alt="Footprint" />
             </HashLink>
