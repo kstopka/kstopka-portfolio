@@ -3,12 +3,19 @@
 .wrapperLogo {
     font-size: 0;
     line-height: 0;
+    &Image {
+        height: $nav-height-mobile;
+        svg {
+            height: $nav-height-mobile;
+            width: 100%;
+            padding: 5px;
+            g {
+                fill: $main_green;
+            }
+        }
+    }
     a {
         line-height: 0;
         font-size: 0;
-        img {
-            height: $nav-height-mobile;
-            padding: 10px;
-        }
     }
 }

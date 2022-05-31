@@ -2,18 +2,19 @@ import * as React from "react";
 import { FunctionComponent } from "react";
 import { HashLink } from "react-router-hash-link";
 
-import Footprint from "../../../images/footprint-304372_640.svg";
-
 import { LogoProps } from "./types.d";
 import styles from "./rwd.module.scss";
+import { FootPrint } from "../../../mocks/Navigation/FootLogo";
 
-const { wrapperLogo } = styles;
+const { wrapperLogo, wrapperLogoImage } = styles;
 
 export const Logo: FunctionComponent<LogoProps> = ({ handleHamburger }) => {
     return (
         <div className={wrapperLogo}>
             <HashLink to="/#home" onClick={() => handleHamburger(false)}>
-                <img src={Footprint} alt="Footprint" />
+                <div className={wrapperLogoImage}>
+                    <FootPrint />
+                </div>
             </HashLink>
         </div>
     );
