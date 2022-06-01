@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 
 import { LogoProps } from "./types.d";
 import styles from "./rwd.module.scss";
-import { FootPrint } from "../../../mocks/Navigation/FootLogo";
+import { FootPrint } from "../../shared/icons/FootLogo";
 
 const { wrapperLogo, wrapperLogoImage } = styles;
 
