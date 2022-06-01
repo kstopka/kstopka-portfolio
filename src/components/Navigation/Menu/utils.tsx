@@ -1,25 +1,27 @@
 import { TargetedEvent } from "../MenuItem/types.d";
-// import { MutableRef } from "./types.d";
 import { MutableRefObject } from "react";
 
-export const removeEveryActiveClassFromChildren = (ref: MutableRefObject<HTMLUListElement | null>) => {
+export const removeEveryActiveClassFromChildren = (
+    ref: MutableRefObject<HTMLUListElement | null>,
+    activeName: string
+) => {
     if (ref.current) {
         const { children } = ref.current;
         const listOfChildren = Array.from(children);
 
         listOfChildren.forEach((child) => {
-            if (child) child.classList.remove("active");
+            if (child) child.classList.remove(activeName);
         });
     }
 };
 
-export const addActiveClassToColor = (e: TargetedEvent<HTMLLIElement, Event>) => {
-    if (e.currentTarget) e.currentTarget.classList.add("active");
+export const addActiveClassToColor = (e: TargetedEvent<HTMLLIElement, Event>, activeName: string) => {
+    if (e.currentTarget) e.currentTarget.classList.add(activeName);
 };
 
-export const addActiveClassOnLoad = (value: string, selectedValue: string): string => {
+export const addActiveClassOnLoad = (value: string, selectedValue: string, activeName: string): string => {
     if (value === selectedValue) {
-        return "active";
+        return activeName;
     }
     return "";
 };

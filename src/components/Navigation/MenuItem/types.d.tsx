@@ -6,7 +6,7 @@ export interface ILink {
 
 export interface MenuLiItemProps {
     link: ILink;
-    onChangeHandler: (e: TargetedEvent<HTMLLIElement, Event>) => void;
+    onChangeHandler: (e: TargetedEvent<HTMLLIElement, Event>, activeName: string) => void;
 }
 
 type Exclude<T, U> = T extends U ? never : T;
