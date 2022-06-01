@@ -13,21 +13,37 @@
 
 @media only screen and (min-width: map.get($breakpoints, "large-min")) {
     .menuLiItem {
-        width: 90%;
+        width: auto;
 
         margin: 0 auto;
-        background-color: rgba($black, 0.3);
+        background-color: transparent;
         border-radius: 0px;
-        box-shadow: $mediumBoxShadow;
-        margin: 5px;
+        box-shadow: none;
+        overflow: hidden;
 
         a {
-            padding: 5px 0;
+            padding: 5px 20px;
         }
 
-        // &Active {
-        //     background-color: red;
-        // }
+        &::after {
+            content: "";
+            display: block;
+
+            height: 2px;
+            width: auto;
+            transform: translateX(-100%);
+            transition: $transition-linear;
+        }
+
+        &Active {
+            a {
+                color: $activeColor;
+            }
+            &::after {
+                background-color: $activeColor;
+                transform: translateX(0%);
+            }
+        }
     }
 }
 

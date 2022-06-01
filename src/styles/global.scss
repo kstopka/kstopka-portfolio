@@ -35,14 +35,14 @@ a {
     font-size: $sizeFour;
     line-height: $siezeLineFour;
     font-weight: $bold;
-    color: $main_green;
+    color: $black;
     &:checked,
     &:hover,
     &:focus,
     &:active {
         outline: none;
         text-decoration: none;
-        color: inherit;
+        // color: inherit;
     }
 }
 
@@ -75,42 +75,42 @@ h1 {
     font-size: $sizeOne;
     font-weight: $bold;
     line-height: $siezeLineOne;
-    color: $main_green;
+    color: $activeColor;
 }
 h2 {
     font-family: $header_font;
     font-size: $sizeTwo;
     font-weight: $bold;
     line-height: $siezeLineTwo;
-    color: $main_green;
+    color: $activeColor;
 }
 h3 {
     font-family: $header_font;
     font-size: $sizeThree;
     font-weight: $bold;
     line-height: $siezeLineThree;
-    color: $main_green;
+    color: $primaryColor;
 }
 h4 {
     font-family: $paragraph_font;
     font-size: $sizeFour;
     font-weight: $thick;
     line-height: $siezeLineFour;
-    color: $main_green;
+    color: $primaryColor;
 }
 h5 {
     font-family: $paragraph_font;
     font-size: $sizeFive;
     font-weight: $thick;
     line-height: $siezeLineFive;
-    color: $main_green;
+    color: $primaryColor;
 }
 h6 {
     font-family: $paragraph_font;
     font-size: $sizeSix;
     font-weight: $thick;
     line-height: $siezeLineSix;
-    color: $main_green;
+    color: $primaryColor;
 }
 
 p {
@@ -118,7 +118,7 @@ p {
     font-size: $sizeFour;
     font-weight: $thick;
     line-height: $siezeLineFour;
-    color: $main_green;
+    color: $primaryColor;
 }
 
 img {

@@ -7,6 +7,15 @@ $white: #ffffff;
 $black: #000000;
 $main_green: #007f3f;
 
+$activeColor: #6082b6;
+$primaryColor: $black;
+
+$primaryBackgroundColor: #eee;
+$secondaryBackgroundColor: #ccc;
+
+$navBackgoundColorDark: #4b4b4b;
+$navBackgoundColorLight: #b4b4b4;
+
 $light_gray: #b4b4b4;
 $dark_gray: #a7a7a7;
 $taupe: #5d5d67;
@@ -81,3 +90,4 @@ $curtain-transition-duration: 300ms;
 $modal-transition-duration: 300ms;
 $drawer-transition-duration: 600ms;
 $transition-default: $transition-timing-function $curtain-transition-duration;
+$transition-linear: 300ms linear;

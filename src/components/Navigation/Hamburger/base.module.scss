@@ -13,7 +13,7 @@
     &Icon {
         width: calc($nav-height-mobile * 0.6);
         height: calc($nav-height-mobile * 0.1);
-        background-color: $main_green;
+        background-color: $activeColor;
         border-radius: 5px;
         transition: $transition-default;
 
@@ -23,7 +23,7 @@
             position: absolute;
             width: calc($nav-height-mobile * 0.6);
             height: calc($nav-height-mobile * 0.1);
-            background-color: $main_green;
+            background-color: $activeColor;
             border-radius: 5px;
             transition: $transition-default;
         }
@@ -35,7 +35,7 @@
             transform: translateY(calc($nav-height-mobile * -0.2));
         }
         &Active {
-            @extend .hamburgerIcon;
+            // @extend .hamburgerIcon;
             transform: translateX(calc($nav-height-mobile * -0.6));
             background-color: transparent;
 

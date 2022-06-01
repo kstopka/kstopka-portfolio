@@ -4,11 +4,11 @@ import { TitleHomeProps } from "../../../components/HomePage/Home/components/Tit
 import { TitlesContentHomeProps } from "../../../components/HomePage/Home/components/TitlesContent/types.d";
 
 const TitleHomeMock: TitleHomeProps = {
-    title: "Cześć",
+    title: "Cześć, Jestem",
 };
 
 const AuthorHomeMocok: AuthorHomeProps = {
-    author: "Jestem Krystian",
+    author: "Krystian",
 };
 const DescriptionHomeMock: DescriptionHomeProps = {
     description: "Front End Dev",

@@ -14,15 +14,14 @@
 @media only screen and (min-width: map.get($breakpoints, "large-min")) {
     .wrapperMenu {
         position: static;
-
         width: auto;
         height: auto;
         transform: translateX(0);
+        margin-right: 5vw;
 
         &List {
             flex-direction: row;
-            // height: 10px;
-            background-color: rgba($light_gray, $halfOpacity);
+            background-color: transparent;
         }
     }
 }
