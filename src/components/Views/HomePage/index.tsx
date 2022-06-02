@@ -6,11 +6,11 @@ import styles from "./rwd.module.scss";
 import { About, Contact, Hobby, Home, Projects, Technologies } from "../../HomePage";
 import { HobbyMock, HomeMock, TechnologiesMock } from "../../../mocks/HomePage";
 
-const { homePage } = styles;
+const { wrapperHomePage } = styles;
 
 export const HomePage: FunctionComponent<HomePageProps> = () => {
     return (
-        <div className={homePage}>
+        <div className={wrapperHomePage}>
             <Home {...HomeMock} />
             <About />
             <Hobby {...HobbyMock} />

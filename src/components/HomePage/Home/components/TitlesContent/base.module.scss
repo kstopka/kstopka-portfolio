@@ -3,15 +3,14 @@
 .wrapperTitles {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     &Title {
-        margin: 10px auto;
+        margin-left: 5vw;
     }
     &Author {
-        margin: 10px auto;
+        margin: 20px 5vw;
     }
     &Description {
-        margin: 10px auto;
+        margin-left: 5vw;
     }
 }

@@ -7,5 +7,5 @@ import styles from "./rwd.module.scss";
 const { wrapperTitle } = styles;
 
 export const TitleHome: FunctionComponent<TitleHomeProps> = ({ title }) => {
-    return <h2 className={wrapperTitle}>{title}</h2>;
+    return <h3 className={wrapperTitle}>{title}</h3>;
 };

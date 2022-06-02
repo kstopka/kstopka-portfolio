@@ -4,12 +4,11 @@
     padding-top: $nav-height-mobile;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     &Image {
         margin: 20px auto;
     }
     &Titles {
-        margin: 20px auto;
+        margin: 20px;
     }
 }

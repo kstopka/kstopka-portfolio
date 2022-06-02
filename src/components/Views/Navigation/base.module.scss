@@ -10,8 +10,8 @@
     height: $nav-height-mobile;
     width: 100%;
 
-    border-bottom: $taupe solid 1px;
-    background-color: $navBackgoundColorLight;
+    border-bottom: $activeColor solid 2px;
+    background-color: $primaryBackgroundColor;
 
-    z-index: 10;
+    z-index: 100;
 }
