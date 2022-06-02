@@ -6,16 +6,46 @@
 }
 
 @media only screen and (min-width: map.get($breakpoints, "smaller")) {
+    .wrapperHome {
+        &Image {
+            margin-right: 15vw;
+        }
+    }
 }
 
 @media only screen and (min-width: map.get($breakpoints, "small")) {
+    .wrapperHome {
+        flex-direction: row-reverse;
+        align-items: center;
+        &Titles {
+            margin-left: 15vw;
+        }
+    }
 }
 
 @media only screen and (min-width: map.get($breakpoints, "large-min")) {
 }
 
 @media only screen and (min-width: map.get($breakpoints, "large")) {
+    .wrapperHome {
+        max-width: 1440px;
+        &Image {
+            margin-right: 236px;
+        }
+        &Titles {
+            margin-left: 236px;
+        }
+    }
 }
 
 @media only screen and (min-width: map.get($breakpoints, "large-max")) {
+    .wrapperHome {
+        max-width: 1600px;
+        &Image {
+            margin-right: 316px;
+        }
+        &Titles {
+            margin-left: 316px;
+        }
+    }
 }
