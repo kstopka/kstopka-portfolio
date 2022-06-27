@@ -3,13 +3,18 @@ import { FunctionComponent } from "react";
 import { ContactProps } from "./types.d";
 
 import styles from "./rwd.module.scss";
+import { Content } from "./components/Content";
 
-const { contact } = styles;
+const { contact, backgroundImage, wrapperContent } = styles;
 
-export const Contact: FunctionComponent<ContactProps> = () => {
+export const Contact: FunctionComponent<ContactProps> = ({ content }) => {
     return (
         <div className={contact} id="contact">
-            Contact
+            <div className={backgroundImage}>
+                <div className={wrapperContent}>
+                    <Content {...content} />
+                </div>
+            </div>
         </div>
     );
 };

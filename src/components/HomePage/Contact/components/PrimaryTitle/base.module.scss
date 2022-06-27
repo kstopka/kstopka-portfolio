@@ -1,0 +1,11 @@
+@import "../../../../../styles/variables";
+
+.primaryTitle {
+    margin: 0 auto;
+    font-family: $font_family;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    // color: $grayscale-black;
+}

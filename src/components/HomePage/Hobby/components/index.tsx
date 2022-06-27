@@ -1,7 +1,5 @@
-import { TitleHobby } from "./Title";
-import { SubtitleHobby } from "./Subtitle";
-import { TitlesContentHobby } from "./TitlesContent";
-import { CarouselHobby } from "./Carousel";
-import { CardHobby } from "./Card";
-
-export { TitleHobby, SubtitleHobby, TitlesContentHobby, CarouselHobby, CardHobby };
+export { TitleHobby } from "./Title";
+export { SubtitleHobby } from "./Subtitle";
+export { TitlesContentHobby } from "./TitlesContent";
+export { CarouselHobby } from "./Carousel";
+export { CardHobby } from "./Card";

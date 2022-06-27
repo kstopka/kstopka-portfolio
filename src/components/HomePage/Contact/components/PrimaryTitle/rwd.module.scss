@@ -1,0 +1,35 @@
+@use "sass:map";
+@import "../../../../../styles/variables";
+@import "./base.module.scss";
+
+@media only screen and (max-width: map.get($breakpoints, "super-smaller")) {
+}
+
+@media only screen and (min-width: map.get($breakpoints, "super-smaller")) {
+}
+
+@media only screen and (min-width: map.get($breakpoints, "smaller")) {
+    .primaryTitle {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+@media only screen and (min-width: map.get($breakpoints, "small")) {
+}
+
+@media only screen and (min-width: map.get($breakpoints, "large-min")) {
+}
+
+@media only screen and (min-width: map.get($breakpoints, "large")) {
+    .primaryTitle {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+@media only screen and (min-width: map.get($breakpoints, "large-max")) {
+    .primaryTitle {
+        font-size: 60px;
+        line-height: 72px;
+    }
+}

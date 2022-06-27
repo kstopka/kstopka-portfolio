@@ -1,7 +1,22 @@
 @import "../../../styles/variables.scss";
 
 .contact {
-    // background-color: blanchedalmond;
-    // min-height: calc(100vh - $nav-height-mobile);
-    // margin-top: $nav-height-mobile;
+    background-position: bottom;
+    position: relative;
+    padding-bottom: 50px;
+    // background-color: $secondary-background;
+}
+
+.backgroundImage {
+    background-position: top center;
+    background-size: auto 350px;
+    background-repeat: repeat no-repeat;
+    position: relative;
+    // background-color: $secondary-background;
+}
+
+.wrapperContent {
+    position: relative;
+    top: 30px;
+    margin: 0 auto 30px;
 }

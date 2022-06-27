@@ -1,5 +1,4 @@
-import { HobbyMock } from "./Hobby/Hobby.mocks";
-import { HomeMock } from "./Home/Home.mocks";
-import { TechnologiesMock } from "./Technologies/Technologies.mocks";
-
-export { HobbyMock, HomeMock, TechnologiesMock };
+export { ContactMock } from "./Contact/Contact.mock";
+export { HobbyMock } from "./Hobby/Hobby.mocks";
+export { HomeMock } from "./Home/Home.mocks";
+export { TechnologiesMock } from "./Technologies/Technologies.mocks";
