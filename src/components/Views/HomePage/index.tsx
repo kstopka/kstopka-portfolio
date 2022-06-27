@@ -11,11 +11,11 @@ const { wrapperHomePage } = styles;
 export const HomePage: FunctionComponent<HomePageProps> = () => {
     return (
         <div className={wrapperHomePage}>
-            {/* <Home {...HomeMock} />
+            <Home {...HomeMock} />
             <About />
             <Hobby {...HobbyMock} />
             <Projects />
-            <Technologies {...TechnologiesMock} /> */}
+            <Technologies {...TechnologiesMock} />
             <Contact {...ContactMock} />
         </div>
     );

@@ -5,13 +5,13 @@ import { ContactProps } from "./types.d";
 import styles from "./rwd.module.scss";
 import { Content } from "./components/Content";
 
-const { contact, backgroundImage, wrapperContent } = styles;
+const { wrapperContact, wrapperContactBackground, wrapperContactContent } = styles;
 
 export const Contact: FunctionComponent<ContactProps> = ({ content }) => {
     return (
-        <div className={contact} id="contact">
-            <div className={backgroundImage}>
-                <div className={wrapperContent}>
+        <div className={wrapperContact} id="contact">
+            <div className={wrapperContactBackground}>
+                <div className={wrapperContactContent}>
                     <Content {...content} />
                 </div>
             </div>
