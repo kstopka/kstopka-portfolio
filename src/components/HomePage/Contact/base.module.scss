@@ -1,24 +1,14 @@
 @import "../../../styles/variables.scss";
 
 .wrapperContact {
-    // background-position: bottom;
-    // position: relative;
-    // padding-bottom: 150px;
-    background-color: $primaryBackgroundColor;
-    &Background {
-        // background-position: top center;
-        // background-size: auto 350px;
-        // background-repeat: repeat no-repeat;
-        // background-position: center;
-        // // background-size: 350px;
-        // position: relative;
-        padding: 50px 0;
-        background-color: $secondaryBackgroundColor;
-    }
+  background-color: $primaryBackgroundColor;
+  &Background {
+    padding: 50px 0;
+  }
 
-    &Content {
-        // position: relative;
-        // top: 30px;
-        // margin: 0 auto;
-    }
+  &Content {
+    // position: relative;
+    // top: 30px;
+    margin: 0 auto;
+  }
 }

@@ -1,14 +1,14 @@
 @import "../../../../../styles/variables";
 
 .secondaryTitle {
-    margin: 0 auto;
-    // font-family: $primary-font-bold;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
+  margin: 0 auto;
+  font-family: $font_family;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
 
-    // color: $primary-brown;
+  // color: $primary-brown;
 
-    text-transform: uppercase;
-    text-align: center;
+  text-transform: uppercase;
+  text-align: center;
 }

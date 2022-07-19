@@ -1,15 +1,15 @@
 @import "../../../../../styles/variables";
 
 .description {
-    margin: 0 auto;
-    // font-family: $primary-font;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 28px;
-    text-align: center;
-    // color: $grayscale-black;
+  margin: 0 auto;
+  font-family: $font_family;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
 
-    &Email {
-        // font-family: $primary-font-bold;
-    }
+  &Email {
+    font-family: $font_family;
+  }
 }

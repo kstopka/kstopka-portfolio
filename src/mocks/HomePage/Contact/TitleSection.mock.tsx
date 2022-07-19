@@ -4,20 +4,20 @@ import { SecondaryTitleProps } from "../../../components/HomePage/Contact/compon
 import { TitleSectionProps } from "../../../components/HomePage/Contact/components/TitleSection/types";
 
 const SecondaryTitle: SecondaryTitleProps = {
-    title: "contact us",
+  title: "",
 };
 
 const PrimaryTitle: PrimaryTitleProps = {
-    title: "Our Team Is Here to Help",
+  title: "Napisz do mnie",
 };
 
 const Descriptions: DescriptionProps = {
-    text: "Message us via the form below or send an email to ",
-    email: "support@muslincomfort.com",
+  text: "możesz też wysłać wiadomość na moją skrzynkę mailową ",
+  email: "kontakt@kstopka.com",
 };
 
 export const TitlesSection: TitleSectionProps = {
-    primaryTitle: PrimaryTitle,
-    secondaryTitle: SecondaryTitle,
-    descriptions: Descriptions,
+  primaryTitle: PrimaryTitle,
+  secondaryTitle: SecondaryTitle,
+  descriptions: Descriptions,
 };

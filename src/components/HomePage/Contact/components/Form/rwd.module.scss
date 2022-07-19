@@ -6,104 +6,104 @@
 }
 
 @media only screen and (min-width: map.get($breakpoints, "smaller")) {
-    .wrapper {
-        max-width: 538px;
+  .wrapper {
+    max-width: 538px;
 
-        &Form {
-            & > textarea {
-                height: 220px;
-                margin-bottom: 30px;
-            }
+    &Form {
+      & > textarea {
+        height: 220px;
+        margin-bottom: 30px;
+      }
 
-            &Input {
-                padding: 11px 20px 12px;
-                margin-bottom: 20px;
-            }
+      &Input {
+        padding: 11px 20px 12px;
+        margin-bottom: 20px;
+      }
 
-            &Container {
-                width: 538px;
-                &Button {
-                    padding: 18px;
-                    font-size: 20px;
-                    line-height: 25px;
-                    border-radius: 8px;
-                    box-shadow: inset 0px 4px 1px rgba(255, 255, 255, 0.15);
-                }
-            }
+      &Container {
+        width: 538px;
+        &Button {
+          padding: 18px;
+          font-size: 20px;
+          line-height: 25px;
+          border-radius: 8px;
+          box-shadow: inset 0px 4px 1px rgba(255, 255, 255, 0.15);
         }
-
-        &ErrorContainer {
-            &Message {
-                font-size: 16px;
-                line-height: 27px;
-            }
-        }
+      }
     }
+
+    &ErrorContainer {
+      &Message {
+        font-size: 16px;
+        line-height: 27px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: map.get($breakpoints, "large-min")) {
-    .wrapper {
-        max-width: 883px;
+  .wrapper {
+    max-width: 883px;
 
-        &Form {
-            & > textarea {
-                height: 280px;
-                margin-bottom: 40px;
-            }
+    &Form {
+      & > textarea {
+        height: 280px;
+        margin-bottom: 40px;
+      }
 
-            &Input {
-                margin-bottom: 30px;
-            }
+      &Input {
+        margin-bottom: 30px;
+      }
 
-            &Container {
-                width: 420px;
-                &Button {
-                    padding: 16px;
-                    font-size: 22px;
-                    line-height: 27px;
-                }
-            }
+      &Container {
+        width: 420px;
+        &Button {
+          padding: 16px;
+          font-size: 22px;
+          line-height: 27px;
         }
+      }
     }
+  }
 }
 
 @media only screen and (min-width: map.get($breakpoints, "large")) {
-    .wrapper {
-        max-width: 1000px;
+  .wrapper {
+    max-width: 1000px;
 
-        &Form {
-            & > textarea {
-                height: 320px;
-                font-size: 18px;
-                line-height: 30px;
-            }
+    &Form {
+      & > textarea {
+        height: 320px;
+        font-size: 18px;
+        line-height: 30px;
+      }
 
-            &Input {
-                padding: 15px 20px;
-                font-size: 18px;
-                line-height: 30px;
+      &Input {
+        padding: 15px 20px;
+        font-size: 18px;
+        line-height: 30px;
 
-                &::placeholder {
-                    font-size: 18px;
-                    line-height: 30px;
-                }
-            }
-            &Container {
-                &Button {
-                    padding: 20px;
-                    font-size: 22px;
-                    line-height: 27px;
-                    border-radius: 8px;
-                    box-shadow: inset 0px 4px 1px rgba(255, 255, 255, 0.15);
-                }
-            }
+        &::placeholder {
+          font-size: 18px;
+          line-height: 30px;
         }
-
-        &ErrorContainer {
-            &Message {
-                font-size: 18px;
-                line-height: 30px;
-            }
+      }
+      &Container {
+        &Button {
+          padding: 20px;
+          font-size: 22px;
+          line-height: 27px;
+          border-radius: 8px;
+          box-shadow: inset 0px 4px 1px rgba(255, 255, 255, 0.15);
         }
+      }
     }
+
+    &ErrorContainer {
+      &Message {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
 }

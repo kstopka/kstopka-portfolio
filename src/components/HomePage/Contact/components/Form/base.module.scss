@@ -1,138 +1,138 @@
 @import "../../../../../styles/variables";
 
 .wrapper {
-    max-width: 295px;
-    margin: 0 auto;
+  max-width: 295px;
+  margin: 0 auto;
 
-    &Form {
-        display: flex;
-        flex-direction: column;
+  &Form {
+    display: flex;
+    flex-direction: column;
 
-        // description textarea
-        & > textarea {
-            height: 200px;
-            margin-bottom: 20px;
+    // description textarea
+    & > textarea {
+      height: 200px;
+      margin-bottom: 20px;
 
-            font-size: 16px;
-            line-height: 27px;
-            // font-family: $primary-font;
-            font-weight: 400;
-            opacity: 1;
-            resize: none;
-        }
-
-        &Input {
-            width: 100%;
-            padding: 9px 18px;
-            border-radius: 4px;
-            border: none;
-
-            // background-color: $grayscale-secondary-light;
-
-            font-size: 16px;
-            line-height: 27px;
-            margin-bottom: 15px;
-
-            &:focus-within {
-                outline-color: transparent;
-                outline-width: 0px;
-            }
-
-            &::placeholder {
-                // color: $grayscale-secondary;
-                font-size: 16px;
-                line-height: 27px;
-                // font-family: $primary-font;
-                font-weight: 400;
-                opacity: 1;
-            }
-
-            &Error {
-                // border: solid $alert-red-secondary 1px;
-            }
-        }
-        &Container {
-            width: 294px;
-            margin: 0 auto;
-            &Button {
-                padding: 14px;
-                width: 100%;
-                align-self: center;
-
-                // background: $primary-gradient;
-                box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.15);
-                border-radius: 6px;
-
-                // color: $grayscale-white;
-                font-size: 18px;
-                line-height: 22px;
-                // font-family: $primary-font-bold;
-                font-weight: 400;
-
-                border: none;
-
-                cursor: pointer;
-
-                // transition: $transition-default;
-
-                user-select: none;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-
-                -webkit-tap-highlight-color: transparent;
-
-                &:hover {
-                    transform: scaleX(0.99);
-                }
-
-                &:active {
-                    transform: scaleX(1.01);
-                }
-
-                &Disabled {
-                    // color: $grayscale-dark-gray-secondary;
-                    // background: $grayscale-offwhite;
-                    box-shadow: inset 0px 4px 1px rgba(255, 255, 255, 0.15);
-
-                    cursor: not-allowed;
-                }
-            }
-        }
+      font-size: 16px;
+      line-height: 27px;
+      font-family: $font_family;
+      font-weight: 400;
+      opacity: 1;
+      resize: none;
     }
 
-    &ErrorContainer {
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &Message {
-            // color: $alert-red-secondary;
-            // font-family: $primary-font-bold;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 23px;
-            margin: 0 auto;
-        }
+    &Input {
+      width: 100%;
+      padding: 9px 18px;
+      border-radius: 4px;
+      border: none;
+
+      background-color: #ddd;
+
+      font-size: 16px;
+      line-height: 27px;
+      margin-bottom: 15px;
+
+      &:focus-within {
+        outline-color: transparent;
+        outline-width: 0px;
+      }
+
+      &::placeholder {
+        color: #7d7d7d;
+        font-size: 16px;
+        line-height: 27px;
+        font-family: $font_family;
+        font-weight: 400;
+        opacity: 1;
+      }
+
+      &Error {
+        border: solid #d3242a 1px;
+      }
     }
-
-    &SuccessContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+    &Container {
+      width: 294px;
+      margin: 0 auto;
+      &Button {
+        padding: 14px;
         width: 100%;
-        height: 50px;
+        align-self: center;
 
-        // background: $alert-green-secondary;
-        border-radius: 4px;
+        background: linear-gradient(180deg, #784631 0%, #532512 93.23%);
+        box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.15);
+        border-radius: 6px;
 
-        &Message {
-            // font-family: $primary-font-bold;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: $font_family;
+        font-weight: 400;
 
-            // color: $secondary-green-1;
+        border: none;
+
+        cursor: pointer;
+
+        transition: $transition-default;
+
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+
+        -webkit-tap-highlight-color: transparent;
+
+        &:hover {
+          transform: scaleX(0.99);
         }
+
+        &:active {
+          transform: scaleX(1.01);
+        }
+
+        &Disabled {
+          color: #6a6a6a;
+          background: #d7d7d7;
+          box-shadow: inset 0px 4px 1px rgba(255, 255, 255, 0.15);
+
+          cursor: not-allowed;
+        }
+      }
     }
+  }
+
+  &ErrorContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &Message {
+      color: #d3242a;
+      font-family: $font_family;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 23px;
+      margin: 0 auto;
+    }
+  }
+
+  &SuccessContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    background: #cfffa9;
+    border-radius: 4px;
+
+    &Message {
+      font-family: $font_family;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+
+      color: #55b732;
+    }
+  }
 }
